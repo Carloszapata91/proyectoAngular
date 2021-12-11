@@ -1,13 +1,39 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>ProyectoAngular</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel='stylesheet' href='app.component.css' /> <!-- Enlace a la hofa de estilos estilos.css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+
+        <header>
+
+        </header>
+
+    <body style="background-color: rgb(231, 227, 227);">
+        <div class="izquierda"></div>
+        <main>
+            <form id="form-login" name="forma" method="POST" autocomplete="off" style="margin-top: 30px;">
+
+                <h2>Iniciar sesión</h2>
+                <label for="username/correo">Username/correo</label> <br>
+                <input type="text" id="username/correo" name="username/correo"> <br>
+
+                <label for="contrasena">Contraseña</label><br>
+                <input type="password" id="contrasena" name="contrasena"><br>
+
+                <label for="captcha">¿Cuál es la capital de Hungría?.</label><br>
+                <input type="text" id="captcha" name="captcha"><br>
+
+
+                <div class="boton">
+                    <input class="btn" type="submit" id="btn-submit-form" value="Iniciar sesión">
+                </div>
+            </form>
+
+       </main>
+
+    </body>
 </html>
